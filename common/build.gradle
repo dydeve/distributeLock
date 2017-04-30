@@ -1,0 +1,6 @@
+dependencies {
+
+    compile group: 'redis.clients', name: 'jedis', version: '2.9.0'
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.31'
+    compile 'org.apache.zookeeper:zookeeper:3.4.10'
+}
