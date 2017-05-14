@@ -1,4 +1,4 @@
-package demo;
+package usage;
 
 /**
  * A simple example program to use DataMonitor to start and
@@ -35,15 +35,15 @@ public class Executor
 
     /**
      * The client has four requirements:
-
-     It takes as parameters:
-            the address of the ZooKeeper service
-            the name of a znode - the one to be watched
-            the name of a file to write the output to
-            an executable with arguments.
-     It fetches the data associated with the znode and starts the executable.
-     If the znode changes, the client refetches the contents and restarts the executable.
-     If the znode disappears, the client kills the executable.
+     * <p>
+     * It takes as parameters:
+     * the address of the ZooKeeper service
+     * the name of a znode - the one to be watched
+     * the name of a file to write the output to
+     * an executable with arguments.
+     * It fetches the data associated with the znode and starts the executable.
+     * If the znode changes, the client refetches the contents and restarts the executable.
+     * If the znode disappears, the client kills the executable.
      */
     public Executor(String hostPort, String znode, String filename,
                     String exec[]) throws KeeperException, IOException {

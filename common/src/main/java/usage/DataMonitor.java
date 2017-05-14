@@ -1,4 +1,4 @@
-package demo;
+package usage;
 
 /**
  * A simple class that monitors the data and existence of a ZooKeeper

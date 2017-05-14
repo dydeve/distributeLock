@@ -1,4 +1,4 @@
-package demo;
+package usage;
 
 import java.io.IOException;
 import java.util.Random;
