@@ -17,7 +17,6 @@ public class UUIDIdGenerator implements IdGenerator<String> {
         return UUID.randomUUID().toString();
     }
 
-    @Override
     public String strongId() {
         String id = id();
         if (strongIdHolder.putIfAbsent(id, Thread.currentThread()) != null) {
@@ -26,7 +25,6 @@ public class UUIDIdGenerator implements IdGenerator<String> {
         return id;
     }
 
-    @Override
     public boolean deleteStrongId(String strongId) {
 
         return strongIdHolder.remove(strongId, Thread.currentThread());
@@ -34,7 +32,6 @@ public class UUIDIdGenerator implements IdGenerator<String> {
     }
 
 
-    @Override
     public String distributedId() {
         return null;
     }
